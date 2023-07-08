@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Google (Project0)</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="icon"
+      href="https://www.google.com/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a href="imageSearch.html">Google Images</a>
+        </li>
+        <li class="navbar-item">
+          <a href="advancedSearch.html">Advanced Search</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <img
+        src="	https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+        alt="Google"
+      />
+    </div>
+    <div class="search">
+      <form
+        action="https://www.google.com/search"
+        autocomplete="off"
+        method="get"
+        role="search"
+      >
+        <input class="textarea" type="text" name="q" />
+
+        <br />
+        <div class="button">
+          <input class="submit" type="submit" value="Google Search" />
+          <input
+            class="submit"
+            type="submit"
+            value="I'm Feeling Lucky!"
+            formaction="https://www.google.com/search?q=%s&btnI=Im+Feeling+Lucky"
+            formmethod="get"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
