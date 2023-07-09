@@ -8,6 +8,13 @@
       href="https://www.google.com/favicon.ico"
       type="image/x-icon"
     />
+    <script type="text/javascript">
+      function luckySearch() {
+        var query = document.getElementById("searchQuery").value;
+        window.location =
+          "https://www.google.com/search?btnI=I&q=" + encodeURIComponent(query);
+      }
+    </script>
   </head>
   <body>
     <nav class="navbar">
@@ -22,7 +29,7 @@
     </nav>
     <div class="container">
       <img
-        src="	https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
         alt="Google"
       />
     </div>
@@ -33,17 +40,15 @@
         method="get"
         role="search"
       >
-        <input class="textarea" type="text" name="q" />
-
+        <input class="textarea" type="text" name="q" id="searchQuery" />
         <br />
         <div class="button">
           <input class="submit" type="submit" value="Google Search" />
           <input
             class="submit"
-            type="submit"
+            type="button"
             value="I'm Feeling Lucky!"
-            formaction="https://www.google.com/search?q=%s&btnI=Im+Feeling+Lucky"
-            formmethod="get"
+            onclick="luckySearch();"
           />
         </div>
       </form>

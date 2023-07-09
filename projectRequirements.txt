@@ -2,11 +2,6 @@ Your website must meet the following requirements:
 
 Your website should have at least three pages: one for regular Google Search (which must be called index.html), one for Google Image Search, and one for Google Advanced Search.
 
-General: https://www.google.com/search?q=Harvard
-Image: https://www.google.com/search?q=Harvard&tbm=isch
-Advanced: https://www.google.com.au/search?as_q=Harvard
-
-
   On the Google Search page, there should be links in the upper-right of the page to go to Image Search or Advanced Search. On each of the other two pages, there should be a link in the upper-right to go back to Google Search.
 
 On the Google Search page, the user should be able to type in a query, click “Google Search”, and be taken to the Google search results for that page.
@@ -38,17 +33,3 @@ To determine what the parameter names should be, you’re welcome to experiment 
   You may also find it helpful to look at Google’s own HTML to answer these questions. In most browsers, you can control-click or right-click on a page and choose “View Page Source” to view the page’s underlying HTML.
 
 To include an input field in a form that users cannot see or modify, you can use a “hidden” input field.
-
-
-Code notes
-
-    <nav class="navbar">
-      <ul class="navbar-list">
-        <li class="navbar-item">
-          <a href="https://www.google.com/images">Google Images</a>
-        </li>
-        <li class="navbar-item">
-          <a href="https://www.google.com/advanced_search">Advanced Search</a>
-        </li>
-      </ul>
-    </nav>
